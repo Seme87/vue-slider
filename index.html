@@ -33,7 +33,7 @@
                     <div class="thumb active">
                         <img src="img/01.webp" alt="Svezia" />
                     </div>
-                    <div class="thumb" v-for="thumb in slides">
+                    <div class="thumb" v-for="(thumb, index) in slides" v-show="imageActive === index" >
                         <img :src="thumb.image" alt="Ratchet & Clank" />
                     </div>
                     <div class="thumb">
