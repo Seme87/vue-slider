@@ -31,7 +31,7 @@
                     <div class="prev"></div>
                     <div class="next"></div>
                     
-                    <div class="thumb" v-for="(thumb, index) in slides"  >
+                    <div class="thumb" v-for="(thumb, index) in slides" :class="imageActive === index ? 'active' : '' " >
                         <img :src="thumb.image" alt="Ratchet & Clank" />
                     </div>
                     
