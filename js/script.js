@@ -47,8 +47,14 @@
         prevImage(){
            this.imageActive--
            if(this.imageActive < 0){
-            this.imageActive= this.slides.image.lenght-1;
+            this.imageActive= this.slides.length-1;
            }
+        },
+        nextImage() {
+            this.imageActive++
+            if(this.imageActive >= this.slides.length){
+                this.imageActive= 0;
+            }
         }
     }
   }).mount('#app')
