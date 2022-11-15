@@ -55,6 +55,9 @@
             if(this.imageActive >= this.slides.length){
                 this.imageActive= 0;
             }
+        },
+        changeSlide(index) {
+            this.imageActive= index;
         }
     }
   }).mount('#app')
